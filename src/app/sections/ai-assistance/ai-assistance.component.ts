@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-ai-assistance',
-  standalone: true,
-  imports: [],
   templateUrl: './ai-assistance.component.html',
-  styleUrl: './ai-assistance.component.scss'
+  styleUrls: ['./ai-assistance.component.scss'],
+  standalone: true,
+  imports: [CommonModule, TranslateModule]
 })
-export class AiAssistanceComponent {
-
-}
+export class AiAssistanceComponent {}

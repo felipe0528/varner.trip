@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-video-editing',
-  standalone: true,
-  imports: [],
   templateUrl: './video-editing.component.html',
-  styleUrl: './video-editing.component.scss'
+  styleUrls: ['./video-editing.component.scss'],
+  standalone: true,
+  imports: [CommonModule, TranslateModule]
 })
-export class VideoEditingComponent {
-
-}
+export class VideoEditingComponent {}

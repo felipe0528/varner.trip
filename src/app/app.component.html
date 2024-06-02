@@ -1,17 +1,46 @@
-<div>
-  <h1>{{ 'HOME.TITLE' | translate }}</h1>
-  <p>{{ 'HOME.DESCRIPTION' | translate }}</p>
-  <select #langSelect (change)="switchLanguage(langSelect.value)">
-    <option value="en">English</option>
-    <option value="es">Español</option>
-  </select>
-  <nav>
-    <a routerLink="/ai-assistance">{{ 'AI_ASSISTANCE.TITLE' | translate }}</a>
-    <a routerLink="/video-editing">{{ 'VIDEO_EDITING.TITLE' | translate }}</a>
-    <a routerLink="/instagram-posts">{{ 'INSTAGRAM_POSTS.TITLE' | translate }}</a>
-    <a routerLink="/tiktok-videos">{{ 'TIKTOK_VIDEOS.TITLE' | translate }}</a>
-    <a routerLink="/youtube-videos">{{ 'YOUTUBE_VIDEOS.TITLE' | translate }}</a>
-    <a routerLink="/whatsapp-contact">{{ 'WHATSAPP_CONTACT.TITLE' | translate }}</a>
+<div class="container">
+  <header class="text-center my-4">
+    <h1>{{ 'HOME.TITLE' | translate }}</h1>
+    <p>{{ 'HOME.DESCRIPTION' | translate }}</p>
+    <div class="language-selector mt-3">
+      <select #langSelect (change)="switchLanguage(langSelect.value)" class="form-select w-auto mx-auto">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#ai-assistance">{{ 'AI_ASSISTANCE.TITLE' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#video-editing">{{ 'VIDEO_EDITING.TITLE' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#instagram-posts">{{ 'INSTAGRAM_POSTS.TITLE' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tiktok-videos">{{ 'TIKTOK_VIDEOS.TITLE' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#youtube-videos">{{ 'YOUTUBE_VIDEOS.TITLE' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatsapp-contact">{{ 'WHATSAPP_CONTACT.TITLE' | translate }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <router-outlet></router-outlet>
+
+  <main>
+    <app-home></app-home>
+  </main>
 </div>

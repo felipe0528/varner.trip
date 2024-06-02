@@ -1,0 +1,31 @@
+{
+  "HOME": {
+    "TITLE": "Welcome to Varner Trip",
+    "DESCRIPTION": "Your ultimate companion for motorcycle trips across South America"
+  },
+  "AI_ASSISTANCE": {
+    "TITLE": "AI Assistance for Your Trip",
+    "DESCRIPTION": "Get personalized travel advice and assistance using our AI-powered service. Click the button below to start your journey with AI assistance.",
+    "BUTTON": "Get AI Assistance"
+  },
+  "VIDEO_EDITING": {
+    "TITLE": "Professional Video Editing for Your Travels",
+    "DESCRIPTION": "To fund my travels, I offer professional video editing services for your travel videos. If you want to start working on your videos, feel free to reach out to me on WhatsApp.",
+    "BUTTON": "Contact on WhatsApp"
+  },
+  "INSTAGRAM_POSTS": {
+    "TITLE": "Instagram Posts",
+    "DESCRIPTION": "Check out my latest Instagram posts below!"
+  },
+  "TIKTOK_VIDEOS": {
+    "TITLE": "TikTok Videos",
+    "DESCRIPTION": "Check out my latest TikTok videos below!"
+  },
+  "YOUTUBE_VIDEOS": {
+    "TITLE": "YouTube Videos",
+    "DESCRIPTION": "Watch my latest YouTube videos below!"
+  },
+  "WHATSAPP_CONTACT": {
+    "TITLE": "WhatsApp Contact"
+  }
+}
